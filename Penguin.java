@@ -1,17 +1,26 @@
 // Penguin.java
-// 
-// 
+// Kashari Denson
+// 07/28/2026
 // Represents a Palmer Penguin
 
 package edu.fscj.cop2800c.penguin;
 
 // Penguin class extends the Bird base class
-public class Penguin {
+public class Penguin extends Bird {
     // private fields
-
+    private String species;
+    private double flipperLength;
 
     // Constructor
-
+public Penguin(int sampleNumber, String species,
+        double culmenLength, double culmenDepth,
+        double bodyMass, String sex, double flipperLength){
+    
+        super(sampleNumber , culmenLength,culmenDepth ,bodyMass, sex);
+        this.flipperLength = flipperLength;
+        this.species = species;
+    
+    }
 
     // Getter methods
     public String getSpecies() {
@@ -57,3 +66,4 @@ public class Penguin {
         return result;
     }
 }
+

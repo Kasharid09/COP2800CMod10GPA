@@ -33,9 +33,9 @@ public class PenguinAnalyzer {
     }
     
     // Method to retrieve a penguin by sample number
-    public Penguin getPenguinBySampleNum(int sampleNum) {
+    public Penguin getPenguinBySampleNum(int sampleNumber) {
         for (Penguin penguin : penguinList) {
-            if (penguin.getSampleNum() == sampleNum) {
+            if (penguin.getSampleNumber() == sampleNumber) {
                 return penguin;
             }
         }
@@ -112,7 +112,7 @@ public class PenguinAnalyzer {
         for (Penguin penguin : penguinList) {
             System.out.printf(
                 FORMAT_NUM_STR,
-                penguin.getSampleNum(), penguin.getSpecies(),
+                penguin.getSampleNumber(), penguin.getSpecies(),
                 penguin.getCulmenLength(), penguin.getCulmenDepth(),
                 penguin.getFlipperLength(), penguin.getBodyMass(),
                 penguin.getSex());
@@ -128,7 +128,7 @@ public class PenguinAnalyzer {
             for (Penguin penguin : penguinList) {
                 writer.printf(
                     FORMAT_NUM_STR,
-                    penguin.getSampleNum(), penguin.getSpecies(),
+                    penguin.getSampleNumber(), penguin.getSpecies(),
                     penguin.getCulmenLength(), penguin.getCulmenDepth(),
                     penguin.getFlipperLength(), penguin.getBodyMass(),
                     penguin.getSex());
